@@ -1,6 +1,6 @@
 # LG Dataset
 
-[**Download Link**](https://drive.google.com/drive/folders/128mshEziUfrWrFtVWVL8qpswbvmPTAkb?usp=sharing) | [**Paper**](https://link.springer.com/chapter/10.1007/978-3-031-41734-4_27) 
+[**Download Link**](https://drive.google.com/drive/folders/128mshEziUfrWrFtVWVL8qpswbvmPTAkb?usp=sharing) | [**Paper**](https://link.springer.com/chapter/10.1007/978-3-031-41734-4_27) | [**Video**](https://youtu.be/dK3YmN62kJc)
 
 ## Description
 we introduce the task of fine-grained visual understanding of mathematical graphics and present the [Line Graphics (LG) dataset](https://link.springer.com/chapter/10.1007/978-3-031-41734-4_27), which includes pixel-wise annotations of 5 coarse and 10 fine-grained categories. Our dataset covers 520 images of mathematical graphics collected from 450 documents from different disciplines.
