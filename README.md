@@ -26,7 +26,7 @@ we introduce the task of fine-grained visual understanding of mathematical graph
     </tr>
     <tr>
         <td style="text-align:center"> 
-            <img src="./samples/Picture2.png"  alt="1" width = 800px height = 320px >
+            <img src="./samples/Picture2.png"  alt="1" width = 750px height = 320px >
         </td>
     </tr>
 
