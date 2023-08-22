@@ -1,6 +1,6 @@
 # LG Dataset
 
-[**Paper**](https://link.springer.com/chapter/10.1007/978-3-031-41734-4_27) | [**Video**](https://youtu.be/dK3YmN62kJc) | [**Contact**]() <br/>
+[**Download Link**](https://drive.google.com/drive/folders/128mshEziUfrWrFtVWVL8qpswbvmPTAkb?usp=sharing) | [**Paper**](https://link.springer.com/chapter/10.1007/978-3-031-41734-4_27) 
 
 ## Description
 we introduce the task of fine-grained visual understanding of mathematical graphics and present the [Line Graphics (LG) dataset](https://link.springer.com/chapter/10.1007/978-3-031-41734-4_27), which includes pixel-wise annotations of 5 coarse and 10 fine-grained categories. Our dataset covers 520 images of mathematical graphics collected from 450 documents from different disciplines.
@@ -9,93 +9,33 @@ we introduce the task of fine-grained visual understanding of mathematical graph
   Diverse mathematical graphics are covered in our Line Graphics (LG) dataset, including 100 bar charts (a) 320 line graphics (b,d-f), and 100 scatter plots (c). Each sample poses a significant challenge for existing chart analysis methods.
 
 <table style="padding:10px">
-    <tr>
+     <tr>
         <td style="text-align:center">
-            Magazines 
-        </td>
-        <td style="text-align:center">
-            Scientific Reports 
+            Images 
         </td>
     </tr>
     <tr>
         <td style="text-align:center"> 
-            <img src="./images/magazine.png"  alt="1" width = 600px height = 300px >
-        </td>
-        <td style="text-align:center">
-            <img src="./images/paper.png"  alt="2" width = 600px height = 300px>
+            <img src="./samples/Picture1.png"  alt="1" width = 800px height = 280px >
         </td>
     </tr>
     <tr>
         <td style="text-align:center">
-            Tables 
-        </td>
-        <td style="text-align:center">
-            Others 
+            Annotations 
         </td>
     </tr>
     <tr>
         <td style="text-align:center"> 
-            <img src="./images/table.png"  alt="1" width = 600px height = 300px >
-        </td>
-        <td style="text-align:center">
-            <img src="./images/others.png"  alt="2" width = 600px height = 300px>
+            <img src="./samples/Picture2.png"  alt="1" width = 800px height = 280px >
         </td>
     </tr>
+
 
 </table>
 
 # Getting Started 
 
-### Step 1: Clone this repository and change directory to repository root
-```bash
-git clone https://github.com/ayanban011/SwinDocSegmenter.git 
-cd SwinDocSegmenter
-```
-
-### Step 2: Setup and activate the conda environment with required dependencies:
-follow the [installation instructions](https://github.com/ayanban011/SwinDocSegmenter/edit/main/INSTALL.md)
-
-### Step 3: For testing our model, download the best pretrained model weights from the **Model Zoo**
-
-```bash
-python ./train_net.py \
-    --config-file maskdino_R50_bs16_50ep_4s_dowsample1_2048.yaml \
-    --eval-only \
-    --num-gpus 1 \
-    MODEL.WEIGHTS ./model_final.pth
-```
-### Step 4: For training the model from scratch, use this magic command for training on 'n' GPUs:
-```bash
-python train_net.py --num-gpus 1 --config-file config_path SOLVER.IMS_PER_BATCH SET_TO_SOME_REASONABLE_VALUE SOLVER.BASE_LR SET_TO_SOME_REASONABLE_VALUE
-```
-### Step 4: For training the model from scratch, use this magic command for training on 'n' GPUs:
-In ```train_net.py```
-```bash
-def main(args):
-    register_coco_instances("dataset_train",{},"path to the ground truth json file","path to the training image folder")
-    register_coco_instances("dataset_val",{},"path to the ground truth json file","path to the validation image folder")
-
-    MetadataCatalog.get("dataset_train").thing_classes = ['name of the classes']
-    MetadataCatalog.get("dataset_val").thing_classes = ['name of the classes']
-    ...
-if __name__ == "__main__":
-    ...
-    MetadataCatalog.get("dataset_train").thing_classes = ['name of the classes']
-    MetadataCatalog.get("dataset_val").thing_classes = ['name of the classes']
-    ...
-```
-In ```Config File```
-```bash
-...
-SEM_SEG_HEAD:
-    ...
-    NUM_CLASSES: #no. of classes
-...
-DATASETS:
-  TRAIN: ("dataset_train",)
-  TEST: ("dataset_val",)
-...
-```
+#### Download the dataset from [Here](https://drive.google.com/drive/folders/128mshEziUfrWrFtVWVL8qpswbvmPTAkb?usp=sharing)
 
 ## Model Zoo
 In this section, we release the pre-trained weights for all the best DocEnTr model variants trained on benchmark datasets.
