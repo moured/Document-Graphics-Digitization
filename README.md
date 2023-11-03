@@ -1,7 +1,12 @@
-# LG Dataset
 
-[**Download Link**](https://drive.google.com/drive/folders/128mshEziUfrWrFtVWVL8qpswbvmPTAkb?usp=sharing) | [**Paper**](https://link.springer.com/chapter/10.1007/978-3-031-41734-4_27) | [**Video**](https://youtu.be/dK3YmN62kJc)
 
+# LG Dataset 
+
+[**Download Dataset 🤗**](https://huggingface.co/datasets/omoured/line-graphics-dataset) | [**Paper**](https://link.springer.com/chapter/10.1007/978-3-031-41734-4_27) | [**Video**](https://youtu.be/dK3YmN62kJc)
+
+## Update (Nov/2023)
+The dataset has been uploaded to [Huggingface](https://huggingface.co/datasets/omoured/line-graphics-dataset)! 
+Check it out: https://huggingface.co/datasets/omoured/line-graphics-dataset 
 ## Description
 we introduce the task of fine-grained visual understanding of mathematical graphics and present the [Line Graphics (LG) dataset](https://link.springer.com/chapter/10.1007/978-3-031-41734-4_27), which includes pixel-wise annotations of 5 coarse and 10 fine-grained categories. Our dataset covers 520 images of mathematical graphics collected from 450 documents from different disciplines.
  
@@ -33,34 +38,18 @@ we introduce the task of fine-grained visual understanding of mathematical graph
 
 </table>
 
-# Getting Started 
-
-#### Download the dataset from [Here](https://drive.google.com/drive/folders/128mshEziUfrWrFtVWVL8qpswbvmPTAkb?usp=sharing)
-
-
 ## Citation
 
-If you find this useful for your research, please cite it as follows:
+If you find this useful for your work, please cite it as follows:
 
-```bash
-@InProceedings{10.1007/978-3-031-41734-4_27,
-author="Moured, Omar
-and Zhang, Jiaming
-and Roitberg, Alina
-and Schwarz, Thorsten
-and Stiefelhagen, Rainer",
-editor="Fink, Gernot A.
-and Jain, Rajiv
-and Kise, Koichi
-and Zanibbi, Richard",
-title="Line Graphics Digitization: A Step Towards Full Automation",
-booktitle="Document Analysis and Recognition - ICDAR 2023",
-year="2023",
-publisher="Springer Nature Switzerland",
-address="Cham",
-pages="438--453",
-abstract="The digitization of documents allows for wider accessibility and reproducibility. While automatic digitization of document layout and text content has been a long-standing focus of research, this problem in regard to graphical elements, such as statistical plots, has been under-explored. In this paper, we introduce the task of fine-grained visual understanding of mathematical graphics and present the Line Graphics (LG) dataset, which includes pixel-wise annotations of 5 coarse and 10 fine-grained categories. Our dataset covers 520 images of mathematical graphics collected from 450 documents from different disciplines. Our proposed dataset can support two different computer vision tasks, i.e., semantic segmentation and object detection. To benchmark our LG dataset, we explore 7 state-of-the-art models. To foster further research on the digitization of statistical graphs, we will make the dataset, code and models publicly available to the community.",
-isbn="978-3-031-41734-4"
+```bibtex
+@inproceedings{moured2023line,
+  title={Line Graphics Digitization: A Step Towards Full Automation},
+  author={Moured, Omar and Zhang, Jiaming and Roitberg, Alina and Schwarz, Thorsten and Stiefelhagen, Rainer},
+  booktitle={International Conference on Document Analysis and Recognition},
+  pages={438--453},
+  year={2023},
+  organization={Springer}
 }
 ```
 
