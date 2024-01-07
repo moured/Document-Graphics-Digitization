@@ -52,6 +52,3 @@ If you find this useful for your work, please cite it as follows:
   organization={Springer}
 }
 ```
-
-## Conclusion
-Thank you for your interest in our work, and sorry if there are any bugs.
